@@ -20,8 +20,8 @@ jobs:
         node-version: 16
     - name: Install Node Modules    
       run:  npm i 
-    - name: Start Nodejs App
-      run: npm start --exit
+    - name: Format the code
+      run: npm run format
  
    
      
