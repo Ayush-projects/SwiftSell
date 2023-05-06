@@ -23,7 +23,10 @@ jobs:
       run:  npm -v 
     - name: Format the code
       run: npm run format
-    - uses: stefanzweifel/git-auto-commit-action@v4
+    - name: Commit and Push
+      uses: EndBug/add-and-commit@v9
+      with:
+          default_author: github_actions
  
    
      
