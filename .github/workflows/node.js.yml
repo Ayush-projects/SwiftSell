@@ -24,7 +24,7 @@ jobs:
     - name: Format the code
       run: npm run format
     - name: Commit and Push
-      uses: Ayush-projects/add-and-commit@v9
+      uses: Ayush-projects/add-and-commit
       with:
           default_author: github_actions
  
