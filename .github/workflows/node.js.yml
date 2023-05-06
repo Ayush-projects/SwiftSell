@@ -1,1 +1,27 @@
+name: SwiftSell CICD
 
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    permissions: write-all
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clone this repository
+      uses: actions/checkout@v3
+    - name: Setup Node JS        
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - name: Install Node Modules    
+      run:  npm i 
+ 
+   
+     
+         
+      
