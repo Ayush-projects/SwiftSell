@@ -21,7 +21,7 @@ jobs:
     - name: Install Node Modules    
       run:  npm i 
     - name: Start Nodejs App
-      run: npm start
+      run: npm start --exit
  
    
      
