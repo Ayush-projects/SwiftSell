@@ -8,6 +8,11 @@ app.get("/", (req, res) => {
   res.status();
 });
 
+
+app.get("test", (req,res)=>{
+   res.send("linked")
+})
+
 app.listen(PORT, () => {
   console.log("Server is listening on:", PORT);
 });
