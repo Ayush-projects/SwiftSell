@@ -20,7 +20,7 @@ jobs:
       with:
         node-version: 16
     - name: Install Node Modules    
-      run:  npm i 
+      run:  npm -v 
     - name: Format the code
       run: npm run format
     - uses: stefanzweifel/git-auto-commit-action@v4
